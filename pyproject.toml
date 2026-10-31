@@ -15,3 +15,8 @@ build-backend = "hatchling.build"
 
 [tool.hatch.version]
 path = "__about__.py"
+
+[dependency-groups]
+dev = [
+    "hatchling>=1.33.0",
+]
