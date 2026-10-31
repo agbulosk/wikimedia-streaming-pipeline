@@ -1,0 +1,17 @@
+[project]
+name = "wikistream"
+description = "Real-time streaming pipeline from Wikimedia EventStreams to Kafka and Parquet."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+dynamic = ["version"]
+
+[project.scripts]
+wikistream = "wikistream:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "__about__.py"
